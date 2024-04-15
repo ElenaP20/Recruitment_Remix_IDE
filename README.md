@@ -86,3 +86,9 @@ To view more about the transaction, click on the transaction in the terminal:
 It should show the address that have called the function, the function name, address and more details like gas cost and transaction hash.
 
 14. Upon successful deployment of the adresses, you can now experiment with the functions.
+
+IMPORTANT:
+This README.md is purely running the code in Solidity, it DOESN'T  show the full implementation version, which requires the following:
+- the local oracle(_oracle.py_ and _contract_wrapper.py_) and processing python scripts (_ipfs_handler.py_, _file_processor.py, decryptor.py, key_value_extractor.py_ and _cv_parser.py_) all located in RecruitmentDLT repository in employer folder (https://github.com/ElenaP20/RecruitmentDLT).
+- Ganache (https://archive.trufflesuite.com/ganache/) personal blockchain
+- IPFS Desktop App (https://docs.ipfs.tech/install/ipfs-desktop/) or NFT.Storage(https://nft.storage/)
