@@ -1,4 +1,12 @@
 # Recruitment_Remix_IDE
+IMPORTANT:
+This README.md is purely running the code in Solidity, it DOESN'T  show the full implementation version, which requires the following:
+- the local oracle(_oracle.py_ and _contract_wrapper.py_) and processing python scripts (_ipfs_handler.py_, _file_processor.py, decryptor.py, key_value_extractor.py_ and _cv_parser.py_) all located in RecruitmentDLT repository in employer folder (https://github.com/ElenaP20/RecruitmentDLT).
+- Ganache (https://archive.trufflesuite.com/ganache/) personal blockchain
+- IPFS Desktop App (https://docs.ipfs.tech/install/ipfs-desktop/) or NFT.Storage(https://nft.storage/)
+
+For the Demonstration of how the code is used within the decentralised recruitment system, refer to the YouTube video: https://youtu.be/elaXqExYEe4
+
 This README.md file explains the Remix IDE setup for the following contracts:
 1) Advert.sol
 2) NFT.sol
@@ -43,9 +51,11 @@ You should be seeing the compiler version (in the picture: "0.8.25+commit.b61c2a
 ![image](https://github.com/ElenaP20/Recruitment_Remix_IDE/assets/91874987/9c979cb0-f8cf-40d9-8852-6e6b645ca8c2)
 
 12. Before deploying:
-  - From the "ENVIRONMENT" dropdown menu select "Remx VM (London)".
-
-![image](https://github.com/ElenaP20/Recruitment_Remix_IDE/assets/91874987/b8bac43f-3ec2-4936-99f7-287695931d2e)
+  - From the "ENVIRONMENT" dropdown menu select "Dev-Ganache Provider"
+  - A pop-up appears, requesting the Ganache RPC Endpoint
+![image](https://github.com/ElenaP20/Recruitment_Remix_IDE/assets/91874987/ca7ede56-1302-4185-b473-5abb0e375d41)
+  - Successful connection with Ganache looks like:
+![image](https://github.com/ElenaP20/Recruitment_Remix_IDE/assets/91874987/5d6a198b-34c0-4f14-8594-f6e2ec4fe609)
 
 **Note: To make sure that the environment is set correctly, above the "Deploy" button, there should be an orange box with content "evm version:london". The version should match!**
   - The contracts can be deployed now, by selecting the Deploy button.
@@ -86,9 +96,3 @@ To view more about the transaction, click on the transaction in the terminal:
 It should show the address that have called the function, the function name, address and more details like gas cost and transaction hash.
 
 14. Upon successful deployment of the adresses, you can now experiment with the functions.
-
-IMPORTANT:
-This README.md is purely running the code in Solidity, it DOESN'T  show the full implementation version, which requires the following:
-- the local oracle(_oracle.py_ and _contract_wrapper.py_) and processing python scripts (_ipfs_handler.py_, _file_processor.py, decryptor.py, key_value_extractor.py_ and _cv_parser.py_) all located in RecruitmentDLT repository in employer folder (https://github.com/ElenaP20/RecruitmentDLT).
-- Ganache (https://archive.trufflesuite.com/ganache/) personal blockchain
-- IPFS Desktop App (https://docs.ipfs.tech/install/ipfs-desktop/) or NFT.Storage(https://nft.storage/)
